@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Para Ti ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@200;300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <canvas id="bg"></canvas>
+
+  <nav id="nav" aria-label="Navegación">
+    <button class="ndot active" onclick="scrollToSection(0)" aria-label="Inicio"></button>
+    <button class="ndot" onclick="scrollToSection(1)" aria-label="Corazón"></button>
+    <button class="ndot" onclick="scrollToSection(2)" aria-label="Tiempo juntos"></button>
+    <button class="ndot" onclick="scrollToSection(3)" aria-label="Carta"></button>
+    <button class="ndot" onclick="scrollToSection(4)" aria-label="Fotos"></button>
+  </nav>
+
+  <div class="scene">
+
+    <section id="hero">
+      <h1>Para Ti</h1>
+      <p>Con todo mi amor &middot; siempre</p>
+      <div id="scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Desplázate</span>
+      </div>
+    </section>
+
+    <section id="heart-section">
+      <canvas id="heart-canvas" width="340" height="300" aria-label="Corazón animado 3D"></canvas>
+      <div id="heart-msg">
+        <h2>Cada latido es tuyo</h2>
+        <p>En cada momento que respiro, en cada pensamiento que tengo, ahí estás tú. No existe distancia ni tiempo que
+          apague lo que siento.</p>
+      </div>
+    </section>
+
+    <section id="countdown-section">
+      <h2>Que tiempo llevamos de conocernos</h2>
+      <div id="timer" role="timer" aria-live="polite">
+        <div class="t-block"><span class="t-num" id="t-days">000</span><span class="t-label">Días</span></div>
+        <span class="t-sep" aria-hidden="true">·</span>
+        <div class="t-block"><span class="t-num" id="t-hours">00</span><span class="t-label">Horas</span></div>
+        <span class="t-sep" aria-hidden="true">·</span>
+        <div class="t-block"><span class="t-num" id="t-mins">00</span><span class="t-label">Minutos</span></div>
+        <span class="t-sep" aria-hidden="true">·</span>
+        <div class="t-block"><span class="t-num" id="t-secs">00</span><span class="t-label">Segundos</span></div>
+      </div>
+      <p id="countdown-sub">desde el primer día que cambiaste todo <br>
+        Talvez no estuvimos cada segundo juntos pero siempre estuve pensando en ti
+      </p>
+    </section>
+
+    <section id="letter-section">
+      <div class="letter-wrap">
+        <div class="letter-paper">
+          <div class="letter-date" id="letter-date"></div>
+          <div class="letter-line"></div>
+          <div class="letter-salute">Mi amor,</div>
+          <div class="letter-body">
+            Hay personas que llegan a tu vida y la transforman para siempre. Tú eres esa persona para mí. Desde que
+            estás, los días tienen más luz, las noches más calma, y todo parece tener sentido.<br><br>
+            No tengo palabras suficientes para decirte cuánto significas, pero en cada pequeño gesto intento que lo
+            sientas. Gracias por ser exactamente quien eres — por tu risa, tu fuerza, y cada momento compartido.
+          </div>
+          <div class="letter-line"></div>
+          <div class="letter-sign">Con amor eterno ♡</div>
+          <div class="letter-wax" aria-hidden="true">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery-section">
+      <h2>Nuestros momentos</h2>
+      <div class="gallery-grid" id="gallery-grid"></div>
+      <p class="gallery-note">Toca cada marco</p>
+    </section>
+
+    <section id="final">
+      <div class="pulse-heart" aria-hidden="true">♡</div>
+      <p>Hecho con amor, para ti</p>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
