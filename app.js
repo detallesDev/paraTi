@@ -197,12 +197,12 @@
 (function () {
   const grid = document.getElementById('gallery-grid');
   const galleryData = [
-    { img: 'img1.jpg', poem: 'Tu sonrisa ilumina\nmi mundo entero.' },
-    { img: 'img2.jpg', poem: 'A tu lado,\nel tiempo se detiene.' },
-    { img: 'img3.jpg', poem: 'Mi lugar favorito\nes contigo.' },
-    { img: 'img4.jpg', poem: 'Cada día te quiero\nun poco más.' },
-    { img: 'img5.jpg', poem: 'Eres mi casualidad\nmás bonita.' },
-    { img: 'img6.jpg', poem: 'Toda una vida\nno basta.' }
+    { img: 'IMG1.jpg', poem: 'Tu sonrisa ilumina\nmi mundo entero.' },
+    { img: 'IMG2.jpg', poem: 'A tu lado,\nel tiempo se detiene.' },
+    { img: 'IMG3.jpg', poem: 'Mi lugar favorito\nes contigo.' },
+    { img: 'IMG4.jpg', poem: 'Cada día te quiero\nun poco más.' },
+    { img: 'IMG5.jpg', poem: 'Eres mi casualidad\nmás bonita.' },
+    { img: 'IMG6.jpg', poem: 'Toda una vida\nno basta.' }
   ];
 
   galleryData.forEach((item, i) => {
