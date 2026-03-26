@@ -197,12 +197,30 @@
 (function () {
   const grid = document.getElementById('gallery-grid');
   const galleryData = [
-    { img: 'IMG1.jpg', poem: 'Tu sonrisa ilumina\nmi mundo entero.' },
-    { img: 'IMG2.jpg', poem: 'A tu lado,\nel tiempo se detiene.' },
-    { img: 'IMG3.jpg', poem: 'Mi lugar favorito\nes contigo.' },
-    { img: 'IMG4.jpg', poem: 'Cada día te quiero\nun poco más.' },
-    { img: 'IMG5.jpg', poem: 'Eres mi casualidad\nmás bonita.' },
-    { img: 'IMG6.jpg', poem: 'Toda una vida\nno basta.' }
+  { 
+    img: 'IMG1.jpg', 
+    poem: 'En tu mirada encuentro\nmi refugio y mi paz.' 
+  },
+  { 
+    img: 'IMG2.jpg', 
+    poem: 'Contigo cada instante\nse vuelve una eternidad.' 
+  },
+  { 
+    img: 'IMG3.jpg', 
+    poem: 'Eres el sueño del que\nnunca quiero despertar.' 
+  },
+  { 
+    img: 'IMG4.jpg', 
+    poem: 'Tu amor es la brújula\nque guía mi caminar.' 
+  },
+  { 
+    img: 'IMG5.jpg', 
+    poem: 'No hay rincón del mundo\nmejor que estar a tu lado.' 
+  },
+  { 
+    img: 'IMG6.jpg', 
+    poem: 'Mi mejor decisión siempre\nserá elegirte a ti.' 
+  }
   ];
 
   galleryData.forEach((item, i) => {
